@@ -3,7 +3,7 @@ const server = express();
 
 server.get('/', (req,res)=> {
     console.log('Get request...');
-    res.json({message: process.env.MESSAGE || "Welcome to my Heroku app!..."})
+    res.json({message: process.env.MESSAGE || "Welcome to my Heroku app!...", status: 200})
 })
 
 
